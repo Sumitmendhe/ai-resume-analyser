@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>AI Resume Analyzer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <h2>AI Resume Analyzer</h2>
+    </nav>
+
+    <main class="container">
+
+        <section class="hero">
+            <h1>Analyze Your Resume with AI</h1>
+
+            <p>
+                Upload your resume and get AI-powered
+                feedback about your skills and ATS compatibility.
+            </p>
+        </section>
+
+        <section class="upload-card">
+
+            <h2>Upload Resume</h2>
+
+            <p>Select your PDF resume.</p>
+
+            <input
+                type="file"
+                id="resumeInput"
+                accept=".pdf,.doc,.docx"
+            >
+
+            <button onclick="analyzeResume()">
+                Analyze Resume
+            </button>
+
+            <p id="message"></p>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
